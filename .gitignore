@@ -2,3 +2,7 @@
 *.class
 # Ignore Gradle build output directory
 build
+.idea
+.vscode
+*.iml
+
