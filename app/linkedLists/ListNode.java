@@ -1,4 +1,4 @@
-package PartitionList;
+package linkedLists;
 
 public class ListNode {
     int val;

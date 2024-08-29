@@ -1,4 +1,4 @@
-package PartitionList;
+package linkedLists;
 
 public class PartitionList {
     public ListNode partition(ListNode head, int x) {
@@ -31,18 +31,9 @@ public class PartitionList {
 
         // Arrays.asList( 1, 4, 3, 2, 5, 2 ).stream().
 
-        ListNode node = new ListNode(-1);
+        ListNode head = Utils.listNodeFrom(new int[] { 1, 4, 3, 2, 5, 2 });
 
-        ListNode head = node;
-
-        int[] n = new int[] { 1, 4, 3, 2, 5, 2 };
-
-        for (int i = 0; i < n.length; i++) {
-
-            node.next = new ListNode(n[i]);
-            node = node.next;
-        }
-        ListNode partition = new PartitionList().partition(head.next, 3);
+        ListNode partition = new PartitionList().partition(head, 3);
 
         System.out.println(partition);
     }
